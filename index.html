@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To do list project</title>
     <link rel="stylesheet" href="src/output.css">
 </head>
-<body>
-    <h1 class="text-4xl font-bold bg-red-600">Helo World</h1>
+
+<body class="font-poppins">
+
+    <div class="main bg-zinc-900 text-white flex flex-col justify-center h-screen w-full items-center space-y-20">
+
+        <h1 class="text-6xl font-bold tracking-wider">Tick off your tasks with ease</h1>
+
+        <div class="bg-white text-black rounded-md shadow-lg main flex flex-col gap-3 overflow-hidden px-4 py-3">
+            <p class="title font-semibold text-2xl">To do list</p>
+            <div class="flex gap-2 bg-gray-500 overflow-hidden rounded-md">
+                <input type="text" class="input-element outline-none px-4 py-2 bg-gray-500 text-white"
+                    placeholder="add your text">
+                <button type="button" class="add-btn px-3 py-2 bg-indigo-600 text-white font-medium">Add</button>
+            </div>
+            <ul class="list-container">
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
